@@ -56,8 +56,9 @@ function! SmartDelete()
 	return "\<BS>"
 endfunction
 
-autocmd BufEnter *.c,*.cpp inoremap <CR> <C-R>=CSmartIndent()<CR>
-autocmd BufEnter *.py inoremap <CR> <C-R>=PySmartIndent()<CR>
-inoremap <S-TAB> <TAB>
-inoremap <TAB> <C-R>=SmartTab()<CR>
-inoremap <BS> <C-R>=SmartDelete()<CR>
+" Disabled because it conflicts with YCM and others
+" autocmd BufEnter *.c,*.cpp inoremap <CR> <C-R>=CSmartIndent()<CR>
+" autocmd BufEnter *.py inoremap <CR> <C-R>=PySmartIndent()<CR>
+" inoremap <S-TAB> <TAB>
+" inoremap <TAB> <C-R>=SmartTab()<CR>
+" inoremap <BS> <C-R>=SmartDelete()<CR>
